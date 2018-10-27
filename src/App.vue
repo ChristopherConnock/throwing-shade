@@ -16,6 +16,15 @@
             <router-link to="/Basic">Basic</router-link>
           </v-list-tile>
       </v-list>
+      <v-list dense subheader>
+          <v-subheader>crew</v-subheader>
+          <v-list-tile>
+            <router-link to="/bc">bc</router-link>
+          </v-list-tile>
+          <v-list-tile>
+            <router-link to="/sv">sv</router-link>
+          </v-list-tile>
+      </v-list>
     </v-navigation-drawer>
     <v-toolbar app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
