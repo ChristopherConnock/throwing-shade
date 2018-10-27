@@ -1,25 +1,37 @@
 <template>
 
-  <div>{{hey}}</div>
+  <upload-button title="Browse" :selectedCallback="parseFile"></upload-button>
 
 </template>
 
 <script>
 
-  export default {
+    import UploadButton from '../components/UploadButton';
 
-    data(){
-        return {
-            hey: 'hey'
+    export default {
+        components: {
+            UploadButton
+        },
+
+        data(){
+            return {
+                hey: 'hey'
+            }
+        },
+
+        methods(){
+            parseFile(){
+                console.log('parsed file!');
+            }
+
+        },
+
+        created(){
+            console.log('hello!');
         }
-    },
 
-    created(){
-        console.log('hello!');
+
     }
-
-
-  }
 
 // /**
 //    * Reads a file
