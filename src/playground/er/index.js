@@ -16,7 +16,7 @@
 function runme() {
         // var scn = $('#AScene')[0];
         // console.log($('#AScene'));
-        var sceneEl = document.querySelector('a-scene');
+  var sceneEl = document.querySelector("a-scene");
         var sphere = document.querySelector('a-sphere');
         sphere.setAttribute("color", "#FFC65D");
         sphere.object3D.translateZ ( 3 ); 

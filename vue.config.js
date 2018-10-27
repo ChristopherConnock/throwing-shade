@@ -3,5 +3,5 @@ module.exports = {
         port: 4200,
         https: true
     },
-    // ignoredElements: ['gcse:search']
+  ignoredElements: ["a-scene", "a-entity", "a-camera", "a-box"]
 }

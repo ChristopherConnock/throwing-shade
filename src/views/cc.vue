@@ -1,7 +1,13 @@
 <template>
-
-  <upload-button title="Browse" :selectedCallback="parseFile"></upload-button>
-
+    <div>
+    <a-scene>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <div v-for="(item,id) in items" ></div>
+            <a-sphere v-for="location in boxLocations" :position="`0 ${location} -5`" radius="1.25" color="#EF2D5E"></a-sphere>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+            <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+        </div>
 </template>
 
 <script>
@@ -15,15 +21,9 @@
 
         data(){
             return {
-                hey: 'hey'
+                hey: 'hey',
+                boxLocations: [0,2,4,6,8]
             }
-        },
-
-        methods(){
-            parseFile(){
-                console.log('parsed file!');
-            }
-
         },
 
         created(){
