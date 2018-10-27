@@ -4,10 +4,11 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/97/three.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="/index.js"></script>
+    <script src="/modelUtils.js"></script>
   </head>
   <body>
     <button onclick="runme()">click me</button>
-    <a-scene embedded id="AScene" do-something>
+    <a-scene embedded id="AScene" create_model>
             <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
             <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
             <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
