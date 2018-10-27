@@ -24,6 +24,15 @@
           <v-list-tile>
             <router-link to="/sv">sv</router-link>
           </v-list-tile>
+          <v-list-tile>
+            <router-link to="/cc">cc</router-link>
+          </v-list-tile>
+          <v-list-tile>
+            <router-link to="/er">er</router-link>
+          </v-list-tile>
+          <v-list-tile>
+            <router-link to="/as">as</router-link>
+          </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app>
